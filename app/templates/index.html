@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-Decode</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/Nutri-Decode.png') }}" alt="NutriDecode Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Upload Section -->
+    <div class="upload-container">
+        <h1>Upload Food Label</h1>
+        <div id="imagePreview" class="image-preview">
+            <p>No image uploaded yet</p>
+        </div>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="fileInput">Choose File</label>
+            <input type="file" name="file" accept="image/*" id="fileInput">
+            <button type="button" id="uploadButton">Upload</button>
+        </form>
+    </div>
+
+    <!-- Serving Size Adjustment -->
+    <div class="progress-container">
+        <h1>Adjust Serving Measurement (1g - 100g)</h1>
+        <input type="range" id="progressBar" min="1" max="100" value="100">
+        <div class="range-labels">
+            <span>1g</span>
+            <span>25g</span>
+            <span>50g</span>
+            <span>75g</span>
+            <span>100g</span>
+        </div>
+        <h1 style="padding-top:20px">Serving Size</h1>
+        <div class="progress-value" id="progressValue">100 g</div>
+    </div>
+
+    <!-- Nutrient Table -->
+    <div class="table-container">
+        <table id="nutrientTable">
+            <thead>
+                <tr>
+                    <th>Nutrients</th>
+                    <th>Amount (g)</th>
+                </tr>
+            </thead>
+            <tbody id="nutrientBody">
+                <tr><td colspan="2">No data extracted yet</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-output">
+        <h2>Extracted Text:</h2>
+        <p id="extractedText">No text extracted yet.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Nutri-Decode. All Rights Reserved.
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

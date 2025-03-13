@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+</head>
+<body>
+    <h1>Extracted Text</h1>
+    {% if uploaded_url %}
+        <img src="{{ uploaded_url }}" alt="Uploaded Image" width="300">
+    {% endif %}
+    <textarea rows="10" cols="50">{{ extracted_text }}</textarea>
+
+    <br><br>
+    <a href="{{ url_for('main.index') }}">Upload Another Image</a>
+</body>
+</html>

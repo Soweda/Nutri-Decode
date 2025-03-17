@@ -74,3 +74,5 @@ document.getElementById("progressBar").addEventListener("input", function () {
     let selectedWeight = this.value;
     updateNutrientValues(selectedWeight); // Update nutrient values based on user selection
 });
+
+

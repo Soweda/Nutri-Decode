@@ -4,6 +4,7 @@ body, html {
     padding: 0;
     font-family: 'Poppins', Arial, sans-serif;
     background-color: #fdfdfd; /* Light neutral background */
+    overflow-x: hidden;
 }
 
 /* Navbar Styling */
@@ -30,7 +31,7 @@ body, html {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -393,3 +394,311 @@ footer {
     color: #ffffff;
     font-size: 0.8rem;
 }
+.image-container {
+    margin-top: 1rem;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.image-container img {
+    width: 80rem; /* Adjust based on your needs */
+    height: 25rem;
+    display: block;
+    filter: brightness(50%);
+}
+
+.image-text {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color:rgb(239, 231, 216);
+    padding: 10px 20px;
+    font-size: 40px;
+    font-weight:bolder;
+    border-radius: 5px;
+    text-align: center;
+}
+.content h3{
+    text-align: center;
+    color:goldenrod;
+}
+.features h2{
+    text-align: center;
+    background-color: #00796B;
+    color:white;
+    height: 4rem;
+    padding-top: 1.5rem;
+}
+.features h2:hover{
+    color: goldenrod;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensures cards wrap instead of causing overflow */
+    justify-content: center;
+    max-width: 100%; 
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    height: 7rem;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #00796B;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Bounce Effect on Hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.text-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-content a:hover {
+    text-decoration: underline;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding-right: 0;
+    }
+
+    .image-content img {
+        max-width: 100%;
+    }
+}
+
+
+
+.comment-section {
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333;
+}
+
+.required {
+    color: red;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    display: block;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #333;
+}
+.tesimonals{
+
+    display: flex;
+    margin-left: 8rem;
+
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1157 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+}
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 40px 0 0 10px;
+}
+figure.snip1157 blockquote {
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 25px 50px 30px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1157 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.snip1157 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fafafa;
+  margin: 0;
+  position: absolute;
+}
+figure.snip1157 .author {
+  position: absolute;
+  bottom: 45px;
+  padding: 0 10px 0 120px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+figure.snip1157 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1157 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+
+
+
+
